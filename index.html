@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- header part -->
+    <header>
+      <div class="container">
+        <div class="nav__bar">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Туры</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="slogan">
+          <h1 class="nav__title">QAZAQ TRAVEL</h1>
+          <p>Открой неизведанный Казахстан!</p>
+        </div>
+      </div>
+      <!-- header form part -->
+      <form id="searchForm">
+        <label for="username">Ваше имя:</label>
+        <input type="text" id="username" name="username" />
+        <label for="email">Введите ваш email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="city">Город:</label>
+        <input type="text" id="city" name="city" list="cities" />
+        <datalist id="cities">
+          <option value="Алматы"></option>
+          <option value="Ақтау"></option>
+          <option value="Астана"></option>
+          <option value="Шымкент"></option>
+        </datalist>
+        <label for="searchDate">Выберите дату:</label>
+        <input type="date" id="searchDate" name="searchDate" />
+        <button type="submit">Найти</button>
+      </form>
+    </header>
+    <!-- cities part  -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="categories__title">Популярные города</h2>
+        <ul>
+          <li>
+            <img src="./img/almaty.jpeg" alt="Алматы" /><span class="city"
+              >Алматы</span
+            >
+          </li>
+          <li>
+            <img src="./img/astana.jpg" alt="Астана" /><span class="city"
+              >Астана</span
+            >
+          </li>
+          <li>
+            <img src="./img/aktau.jpeg" alt="Ақтау" /><span class="city"
+              >Ақтау</span
+            >
+          </li>
+          <li>
+            <img src="./img/shymkent.jpeg" alt="Шымкент" /><span class="city"
+              >Шымкент</span
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- экскурсии part -->
+    <section class="destinations">
+      <div class="container">
+        <h2>Популярные экскурсии в Казахстане</h2>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="destinations__item">
+              <img src="./img/img1 dest.jpeg" alt="Чарын" />
+              <div class="destinations__price">
+                <h3 class="destinations__title">
+                  Магия Чёрного и Чарынского каньонов, экзотика озёр Кольсай и
+                  Каинды
+                  <span
+                    >Отправиться на внедорожнике к космическим пейзажам
+                    Казахстана</span
+                  >
+                </h3>
+                <button class="choose">Выбрать</button>
+              </div>
+            </div>
+            <div class="destinations__item">
+              <img src="./img/img2 dest.jpeg" alt="Каинды" />
+              <div class="destinations__price">
+                <h3 class="destinations__title">
+                  Сказочные озёра Каинды и Кольсай + Долина Замков Чарынского
+                  каньона в группе
+                  <span
+                    >Отыскать частичку Альп в Казахстане, увидеть Чарынский
+                    каньон и озеро с затопленными соснами</span
+                  >
+                </h3>
+                <button class="choose">Выбрать</button>
+              </div>
+            </div>
+            <div class="destinations__item">
+              <img src="./img/img3 dest.jpeg" alt="Бозжира" />
+              <div class="destinations__price">
+                <h3 class="destinations__title">
+                  Бозжира: космический Казахстан (всё включено)
+                  <span
+                    >Увидеть ландшафты Мангистау, меняющие представление о нашей
+                    планете</span
+                  >
+                </h3>
+                <button class="choose">Выбрать</button>
+              </div>
+            </div>
+            <div class="destinations__item">
+              <img src="./img/img4 dest.jpeg" alt="Бурабай" />
+              <div class="destinations__price">
+                <h3 class="destinations__title">
+                  Национальный парк «Бурабай»: путешествие в казахстанскую
+                  Швейцарию
+                  <span
+                    >Насладиться альпийскими пейзажами и особым микроклиматом в
+                    одном из красивейших мест страны</span
+                  >
+                </h3>
+                <button class="choose">Выбрать</button>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn prev">❮</button>
+          <button class="slider-btn next">❯</button>
+        </div>
+      </div>
+    </section>
+    <!-- articles -->
+    <section class="articles">
+      <div class="container">
+        <h2>Полезные статьи</h2>
+        <div class="articles__cards">
+          <div class="articles__item">
+            <img src="./img/img1 art.jpeg" alt="Побережье Каспийского моря" />
+              <p>Побережье Каспийского моря</p>
+              <button class="btn-modal" id="first-btn">Читать</button>
+            </p>
+          </div>
+
+          <div class="articles__item">
+            <img
+              src="./img/img2 art.jpeg"
+              alt="10 мест Казахстана, которые
+            стоит увидеть"
+            />
+            <p>10 мест Казахстана, которые стоит увидеть</p>
+            <button class="btn-modal" id="second-btn">Читать</button>
+          </div>
+          <div class="articles__item">
+            <img
+              src="./img/img3 art.jpeg"
+              alt="Топ-10 самых необычных
+            зданий в мире"
+            />
+            <p>Топ-10 самых необычных зданий в мире</p>
+            <button class="btn-modal" id="third-btn">Читать</button>
+          </div>
+          <div class="articles__item">
+            <img src="./img/img4 art.jpeg" alt="Путешествие в будущее" />
+            <p>Путешествие в будущее: краткий гайд по Астане</p>
+            <button class="btn-modal" id="fourth-btn">Читать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- modals -->
+    <div class="modals">
+      <div class="modal__first">
+        <div class="modal__content">
+          <span id="close1">&times;</span>
+          <img src="./img/img1 art.jpeg" alt="Каспий" />
+          <p>
+            Единственный морской курорт Казахстана, расположенный на берегу
+            Каспийского моря. В Актау популярны несколько песчаных пляжей с
+            развитой инфраструктурой, таких как Манила, Нур-Плаза, Достар и
+            Марракеш. На этих пляжах предлагаются различные развлечения: катание
+            на катерах, «бананах», зорбах и другие водные активности. Манила и
+            Нур-Плаза — бесплатные пляжи, а за вход на Достар и Марракеш
+            взимается плата.
+          </p>
+        </div>
+      </div>
+      <div class="modal__second">
+        <div class="modal__content">
+          <span id="close2">&times;</span>
+          <img src="./img/img2 art.jpeg" alt="Топ мест" />
+          <ul>
+            <li>1.Чарынский каньон</li>
+            <li>2.Поющий бархан</li>
+            <li>3.Озеро Каинды</li>
+            <li>4.Мавзолей Ходжи Ахмеда Ясави</li>
+            <li>5.Большое Алматинское озеро</li>
+            <li>6.Высокогорный каток «Медео»</li>
+            <li>7.Плато Устюрт</li>
+            <li>8.Озеро Балхаш</li>
+            <li>9.Горы Алатау</li>
+            <li>10.Курорт Боровое</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__third">
+        <div class="modal__content">
+          <span id="close3">&times;</span>
+          <img src="./img/img3 art.jpeg" alt="Топ" />
+          <ul>
+            <li>1.Сиднейская опера, Сидней, Австралия</li>
+            <li>.Саграда Фамилия, Барселона, Испания</li>
+            <li>3.Тадж-Махал, Агра, Индия</li>
+            <li>4.Собор Святого Вита, Прага, Чехия</li>
+            <li>5.Бурдж-Халифа, Дубай, ОАЭ</li>
+            <li>6.Колизей, Рим, Италия</li>
+            <li>7. Эйфелева башня, Париж, Франция</li>
+            <li>8.Пирамиды Гизы, Каир, Египет</li>
+            <li>9.Большой китайская стена, Китай</li>
+            <li>10.Мачу-Пикчу, Перу</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal__fourth">
+        <div class="modal__content">
+          <span id="close4">&times;</span>
+          <img src="./img/img4 art.jpeg" alt="" />
+          <p>
+            Астана — это город будущего с уникальной архитектурой и современной
+            атмосферой. Обязательно посетите Байтерек, чтобы насладиться
+            панорамным видом, и загляните в музей Нур Алем, который поражает
+            своими инновациями. Набережная Есиля идеально подходит для прогулок,
+            а Президентский парк добавит уюта и зелени в ваше путешествие. Для
+            любителей гастрономии в городе представлены казахские блюда, такие
+            как бешбармак, и разнообразие мировой кухни. Летом здесь тепло и
+            солнечно, а зимой город превращается в снежную сказку. Астана
+            оставляет яркие впечатления и вдохновляет на новое!
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        QAZAQ TRAVEL © 2025. Все права защищены. При копировании материалов
+      </p>
+    </footer>
+    <script src="./scripts/scriptForm.js"></script>
+    <script src="./scripts/scriptSlider.js"></script>
+    <script src="./scripts/scrtipt.js"></script>
+  </body>
+</html>
