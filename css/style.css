@@ -195,9 +195,10 @@ li {
   width: 230px;
   height: 175px;
   border-radius: 10px;
+  padding-top: 20px;
 }
 .destinations {
-  padding-top: 200px;
+  padding-top: 250px;
   text-align: center;
 }
 .destinations h2 {
